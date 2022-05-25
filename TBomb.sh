@@ -27,20 +27,20 @@ banner() {
     clear
     echo -e "\e[1;31m"
     if ! [ -x "$(command -v figlet)" ]; then
-        echo 'Introducing TBomb'
+        echo 'Introducing LTBomb'
     else
         figlet TBomb
     fi
     if ! [ -x "$(command -v toilet)" ]; then
-        echo -e "\e[4;34m This Bomber Was Created By \e[1;32mSpeedX \e[0m"
+        echo -e "\e[4;34m This Bomber Was Created By \e[1;32mAayu \e[0m"
     else
         echo -e "\e[1;34mCreated By \e[1;34m"
-        toilet -f mono12 -F border SpeedX
+        toilet -f mono12 -F border Aayu
     fi
     echo -e "\e[1;34m For Any Queries Join Me!!!\e[0m"
-    echo -e "\e[4;32m   YouTube: https://www.youtube.com/c/NitroHacker \e[0m"
+    echo -e "\e[4;32m   YouTube: https://youtube.com/channel/UCcjEgjjiupuyip1Mopb5pmA \e[0m"
     echo " "
-    echo "NOTE: Kindly move to the PIP version Of TBomb for more stability."
+    echo "NOTE: Kindly move to the PIP version Of LT-BOMBER for more stability."
     echo " "
 }
 
@@ -97,7 +97,7 @@ else
     echo "subscribe Official Nitro Hacker"
     echo .
     install_deps
-    echo This Script Was Made By SpeedX > .update
+    echo This Script Was Made By Legend_Trickx > .update
     echo 'Requirements Installed....'
     pause
 fi
@@ -108,9 +108,7 @@ do
     echo " "
     echo "Press 1 To  Start SMS  Bomber "
     echo "Press 2 To  Start CALL Bomber "
-    echo "Press 3 To  Start MAIL Bomber (Not Yet Available)"
-    echo "Press 4 To  Update (Works On Linux And Linux Emulators) "
-    echo "Press 5 To  Exit "
+    echo "Press 3 To  Exit "
     read ch
     clear
     if [ $ch -eq 1 ];then
@@ -120,16 +118,6 @@ do
         $PYTHON bomber.py --call
         exit
     elif [ $ch -eq 3 ];then
-        $PYTHON bomber.py --mail
-        exit
-    elif [ $ch -eq 4 ];then
-        echo -e "\e[1;34m Downloading Latest Files..."
-        rm -f .update
-        $PYTHON bomber.py --update
-        echo -e "\e[1;34m RUN TBomb Again..."
-        pause
-        exit
-    elif [ $ch -eq 5 ];then
         banner
         exit
     else
