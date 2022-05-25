@@ -246,7 +246,7 @@ def selectnode(mode="sms"):
 
 mesgdcrt = MessageDecorator("icon")
 if sys.version_info[0] != 3:
-    mesgdcrt.FailureMessage("TBomb will work only in Python v3")
+    mesgdcrt.FailureMessage("LTBomb will work only in Python v3")
     sys.exit()
 
 try:
@@ -256,7 +256,7 @@ except FileNotFoundError:
 
 
 __VERSION__ = get_version()
-__CONTRIBUTORS__ = ['SpeedX', 't0xic0der', 'scpketer', 'Stefan', 'Nitro']
+__CONTRIBUTORS__ = ['Op_Aayu']
 
 ALL_COLORS = [Fore.GREEN, Fore.RED, Fore.YELLOW, Fore.BLUE,
               Fore.MAGENTA, Fore.CYAN, Fore.WHITE]
@@ -265,32 +265,32 @@ RESET_ALL = Style.RESET_ALL
 ASCII_MODE = False
 DEBUG_MODE = False
 
-description = """TBomb - Your Friendly Spammer Application
+description = """LTBomb - Your Friendly Spammer Application
 
-TBomb can be used for many purposes which incudes -
+LTBomb can be used for many purposes which incudes -
 \t Exposing the vulnerable APIs over Internet
 \t Friendly Spamming
 \t Testing Your Spam Detector and more ....
 
-TBomb is not intented for malicious uses.
+LTBomb is not intented for malicious uses.
 """
 
 parser = argparse.ArgumentParser(description=description,
                                  epilog='moded by Nitro !!!')
 parser.add_argument("-sms", "--sms", action="store_true",
-                    help="start TBomb with SMS Bomb mode")
+                    help="start LTBomb with SMS Bomb mode")
 parser.add_argument("-call", "--call", action="store_true",
-                    help="start TBomb with CALL Bomb mode")
+                    help="start LTBomb with CALL Bomb mode")
 parser.add_argument("-mail", "--mail", action="store_true",
-                    help="start TBomb with MAIL Bomb mode")
+                    help="start LTBomb with MAIL Bomb mode")
 parser.add_argument("-ascii", "--ascii", action="store_true",
                     help="show only characters of standard ASCII set")
 parser.add_argument("-u", "--update", action="store_true",
-                    help="update TBomb")
+                    help="update LTBomb")
 parser.add_argument("-c", "--contributors", action="store_true",
-                    help="show current TBomb contributors")
+                    help="show current LTBomb contributors")
 parser.add_argument("-v", "--version", action="store_true",
-                    help="show current TBomb version")
+                    help="show current LTBomb version")
 
 
 if __name__ == "__main__":
